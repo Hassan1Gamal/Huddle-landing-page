@@ -1,0 +1,147 @@
+:root {
+padding: 0;
+margin: 0;
+box-sizing: border-box;
+
+    --Violet: hsl(257, 40%, 49%);
+--Soft-Magenta: hsl(300, 69%, 71%);
+}
+body {
+    font-family: 'Open Sans', sans-serif;
+      background: url(bg-desktop.svg);
+    background-color: var(--Violet);
+}
+/*  */ /*heading*/
+.main {
+    padding-top: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+  
+  
+}
+.container {
+    display: flex;
+    margin-top: 50px;
+}
+
+/*left col*/
+.left-col {
+    margin: 70px auto;
+    width: 50%;
+    margin-left: 40px;
+    margin-top: 30px;
+
+}
+.left-col h1 {
+    font-size: 41px;
+color: #ffffff;
+font-family: 'Poppins', sans-serif;
+
+}
+.left-col p {
+    font-size: 20px;
+    color: #ffffff;
+    opacity: 80%;
+}
+.logo img {
+width: 200px;
+margin-bottom: 40px;
+}
+
+/*button*/
+.btn {
+    padding: 20px 80px;
+    background-color: #fff;
+    border-radius: 30px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    color: #444;
+    cursor: pointer;
+}
+.btn:hover {
+background-color: var(--Soft-Magenta);
+}
+/*Social*/
+.soicals {
+    display: flex;
+    justify-content: flex-end;
+    
+}
+.soicals i {
+    margin-left: 40px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    padding: 10px;
+
+}
+.soicals i:hover {
+    color: var(--Soft-Magenta);
+    border: 1px solid var(--Soft-Magenta);
+}
+@media (max-width:375px) {
+    .logo img {
+        width: 400px;
+        margin-bottom: 40px;
+        }
+        .container {
+            display: flex;
+            flex-direction: column;
+           
+        }
+        /* .right-col img {
+                width: 700px; 
+        } */
+        .left-col {
+            margin: 45px auto;
+            width: 100%;
+            margin-left: 96px;
+            margin-top: 30px;
+        }
+        .left-col {
+            width: 60vh;
+            text-align: center;
+        }
+        .left-col h1 {
+            font-size: 44px;
+        color: #ffffff;
+        font-family: 'Poppins', sans-serif;
+        width: 100%;
+        line-height: 1.6;
+        
+        }
+        .left-col p {
+            font-size: 28px;
+            color: #ffffff;
+            opacity: 80%;
+        }
+       
+        .btn {
+            padding: 32px 168px;
+            border-radius: 43px;
+            font-size: 30px;
+        }
+        body {
+              background: url(bg-mobile.svg) no-repeat ;
+            background-color: var(--Violet);
+         
+        }
+        .main {
+            padding-top: 30px;
+            padding-left: 20px;
+            padding-right: 20px;
+          
+          
+        }
+        .soicals i {
+           color: #fff;
+          
+           
+        }
+        .soicals {
+         display: flex;
+         justify-content: center;
+         margin-left: 297px;
+          margin-top: 100px;
+        }
+}
